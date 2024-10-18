@@ -38,7 +38,8 @@ RUN pip install albumentations==0.4.3 \
     torchmetrics==0.6.0 \
     kornia==0.6 \
     git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers \
-    git+https://github.com/openai/CLIP.git@main#egg=clip
+    git+https://github.com/openai/CLIP.git@main#egg=clip \
+    Flask  # <-- Explicitly install Flask here
 
 # Expose port for Flask API
 EXPOSE 5000
