@@ -10,6 +10,8 @@ RUN apt-get update && apt-get install -y git libgl1-mesa-glx curl
 
 # Upgrade pip to avoid outdated versions
 RUN pip install --upgrade pip
+# Add this line to install accelerate
+RUN pip install accelerate
 
 # Install PyTorch and torchvision (using CPU version for free-tier deployment)
 RUN pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
