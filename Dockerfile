@@ -34,12 +34,12 @@ RUN pip install albumentations==0.4.3 \
     streamlit>=0.73.1 \
     einops==0.3.0 \
     torch-fidelity==0.3.0 \
-    transformers==4.19.2 \  # <-- Pin the transformers version here
+    transformers==4.19.2 \  # Pin transformers version here
     torchmetrics==0.6.0 \
     kornia==0.6 \
     git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers \
     git+https://github.com/openai/CLIP.git@main#egg=clip \
-    Flask  # <-- Explicitly install Flask here
+    Flask  # Explicitly install Flask here
 
 # Expose port for Flask API
 EXPOSE 5000
